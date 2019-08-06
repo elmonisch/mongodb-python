@@ -66,8 +66,8 @@ def add_car():
     car.model = model
 
     engine = Engine()
-    engine.horsepower = 590
-    engine.mpg = 22
+    engine.horsepower = 700
+    engine.mpg = 20
     engine.liters = 4.0
 
     car.engine = engine
