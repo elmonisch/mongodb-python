@@ -7,15 +7,15 @@ from nosql.servicehistory import ServiceHistory
 def main():
     print_header()
     config_mongo()
-    # update_doc_versions()
+    update_doc_versions()
     user_loop()
 
 
 # noinspection PyProtectedMember
-# def update_doc_versions():
-#     for car in Car.objects():
-#         car._mark_as_changed('vi_number')
-#         car.save()
+def update_doc_versions():
+    for car in Car.objects():
+        car._mark_as_changed('vi_number')
+        car.save()
 
 
 def print_header():
